@@ -26,7 +26,10 @@ let computerScore = 0;
 
 // step 5//
 
-function playRound(humanChoice, computerChoice) {
+
+
+function playGame() {
+    function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
     computerChoice = computerChoice.toLowerCase();
     console.log("human: ", humanChoice); 
@@ -53,7 +56,12 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
     }
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-playRound(humanSelection, computerSelection);
 
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+console.log(humanScore, computerScore);
+}
+playGame();
